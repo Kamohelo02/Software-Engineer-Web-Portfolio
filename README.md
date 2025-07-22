@@ -202,4 +202,4 @@ Typed.js for the smooth typing animations
 EmailJS for contact form functionality
 
 
-Built with ❤️ by Kamohelo MaphelaChat controls Sonnet 4
+Built with ❤️ by Kamohelo Maphela
