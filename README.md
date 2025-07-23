@@ -13,12 +13,28 @@ Downloadable CV - Direct download link for resume
 Sections
 
 Home - Introduction with animated typing effect
+<img width="1920" height="1080" alt="Screenshot (181)" src="https://github.com/user-attachments/assets/d4e63ae7-ca80-4cd2-a86a-d142b6252ca3" />
+
 Education - Academic background and qualifications
+<img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/fdc9933a-bcb6-4aaf-84a8-f7e7c7e6bd1c" />
+
 Certifications - Professional certifications from FreeCodeCamp
+<img width="1920" height="1080" alt="Screenshot (183)" src="https://github.com/user-attachments/assets/6182698d-a9d3-49b6-a7ab-557c3f9081a8" />
+
 Skills - Technical skills across various technologies
+<img width="1920" height="1080" alt="Screenshot (184)" src="https://github.com/user-attachments/assets/c51bd200-da7e-41d1-bd9a-41aaa8175234" />
+
 Projects - Showcase of development work
+<img width="1920" height="1080" alt="Screenshot (185)" src="https://github.com/user-attachments/assets/28452998-54cc-4ecf-b84e-8378b03d0f90" />
+
 Services - Professional services offered
+<img width="1920" height="1080" alt="Screenshot (186)" src="https://github.com/user-attachments/assets/70ca159a-eb79-4e4e-8971-6834410b7d09" />
+
 Contact - Contact form and information
+<img width="1920" height="1080" alt="Screenshot (187)" src="https://github.com/user-attachments/assets/2ebd9aa1-3e70-4bae-af8d-111153dc87fe" />
+<img width="1920" height="1080" alt="Screenshot (188)" src="https://github.com/user-attachments/assets/5886e9c4-c2c5-4bef-8c0b-62e6d058c220" />
+
+
 
 Technologies Used
 
@@ -104,4 +120,3 @@ Contact
 Email: kamohelomaphela04@gmail.com
 LinkedIn: Kamohelo Maphela
 GitHub: Kamohelo02
-
