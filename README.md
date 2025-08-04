@@ -100,20 +100,7 @@ Firefox
 Safari
 Edge
 
-File Structure
-portfolio/
-├── index.html
-├── style.css
-├── script.js
-├── Me.png
-├── Curriculum Vitae.pdf
-└── icons/
-    ├── Education.png
-    ├── Certification.png
-    ├── Skills.png
-    ├── Projects.png
-    ├── Services.png
-    └── Contacts.png
+
 License
 This project is open source and available under the MIT License.
 Contact
