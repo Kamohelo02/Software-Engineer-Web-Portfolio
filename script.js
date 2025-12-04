@@ -1,5 +1,5 @@
 let type = new Typed('#changing-text', {
-    strings : ['Software Engineer', 'Software Developer'],
+    strings : ['Data Engineer', 'Software Engineer', 'Software Developer'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
@@ -15,27 +15,19 @@ function scrollActive(){
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
-        // Adjust offset as needed based on your header's height and desired scroll-trigger point
         const sectionTop = current.offsetTop - 150;
         const sectionId = current.getAttribute('id');
 
-        // Check if the current scroll position is within the bounds of the current section
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            // Add 'active' class to the corresponding navigation link
             document.querySelector('.navbar a[href*=' + sectionId + ']').classList.add('active');
         }else{
-            // Remove 'active' class if not in the current section
             document.querySelector('.navbar a[href*=' + sectionId + ']').classList.remove('active');
         }
     });
 }
 
-// Listen for scroll event to update active navigation link
 window.addEventListener('scroll', scrollActive);
-
-// Initial call to set active class on page load
 scrollActive();
-
 
 // Contact Form Validation and Submission with EmailJS
 const contactForm = document.getElementById('contactForm');
@@ -47,55 +39,45 @@ const emailError = document.getElementById('emailError');
 const messageError = document.getElementById('messageError');
 const formMessage = document.getElementById('formMessage');
 
-// Initialize EmailJS with your Public Key
 (function() {
     emailjs.init({
-        publicKey: 't6C7pRhnJIjz9v0PY', // Replace with your Public Key
+        publicKey: 't6C7pRhnJIjz9v0PY',
     });
 })();
 
-
-// Function to validate email format
 function isValidEmail(email) {
-    // Basic regex for email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
-// Function to display error message for a specific input
 function showError(element, message, errorDiv) {
     errorDiv.textContent = message;
     errorDiv.style.display = 'block';
-    element.classList.add('input-error'); // Optional: Add a class for error styling on the input
+    element.classList.add('input-error');
 }
 
-// Function to clear error message for a specific input
 function clearError(element, errorDiv) {
     errorDiv.textContent = '';
     errorDiv.style.display = 'none';
-    element.classList.remove('input-error'); // Optional: Remove error styling
+    element.classList.remove('input-error');
 }
 
-// Event listener for form submission
 contactForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
 
     let isValid = true;
 
-    // Clear previous error messages
     clearError(nameInput, nameError);
     clearError(emailInput, emailError);
     clearError(messageInput, messageError);
     formMessage.style.display = 'none';
     formMessage.classList.remove('success', 'error');
 
-    // Validate Name
     if (nameInput.value.trim() === '') {
         showError(nameInput, 'Name is required.', nameError);
         isValid = false;
     }
 
-    // Validate Email
     if (emailInput.value.trim() === '') {
         showError(emailInput, 'Email is required.', emailError);
         isValid = false;
@@ -104,24 +86,22 @@ contactForm.addEventListener('submit', function(event) {
         isValid = false;
     }
 
-    // Validate Message
     if (messageInput.value.trim() === '') {
         showError(messageInput, 'Message is required.', messageError);
         isValid = false;
     }
 
     if (isValid) {
-        // If all validations pass, attempt to send the email using EmailJS
         formMessage.textContent = 'Sending message...';
         formMessage.style.display = 'block';
-        formMessage.classList.add('success'); // Use success class for "sending" state
+        formMessage.classList.add('success');
 
         emailjs.sendForm('service_obkl1vs', 't6C7pRhnJIjz9v0PY', this)
             .then(() => {
                 formMessage.textContent = 'Message Sent!';
                 formMessage.classList.remove('error');
                 formMessage.classList.add('success');
-                contactForm.reset(); // Clear the form fields after successful submission
+                contactForm.reset();
             })
             .catch((error) => {
                 console.error('EmailJS Error:', error);
@@ -131,7 +111,6 @@ contactForm.addEventListener('submit', function(event) {
             });
 
     } else {
-        // If validation fails, show a general error message
         formMessage.textContent = 'Please correct the errors in the form.';
         formMessage.style.display = 'block';
         formMessage.classList.add('error');
