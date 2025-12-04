@@ -620,6 +620,23 @@ p {
     color: white;
     font-weight: 500;
 }
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Update Typed.js text colors */
+#changing-text {
+    color: #23cf17;
+}
+
+/* Experience section */
+#experience {
+    background-color: #e9ede8;
+    color: #333;
+}
 /* -- **>> Responsive Design **>> -- */
 @media (max-width: 768px) {
     .header {
