@@ -79,6 +79,30 @@
             <p class="section-subtitle">Professional certifications from my CV</p>
             <div class="certifications-grid">
                 <div class="education-card">
+                    <div class="education-year">February 2026</div>
+                    <h3 class="education-degree">Quantium - Software Engineering Job Simulation</h3>
+                    <p class="education-school">Forage</p>
+                    <p><strong>Skills:</strong> Python, Data Analysis, Dashboard Development, Test Automation, ETL Processes, CI/CD</p>
+                    <div class="section-links">
+                        <a href="https://www.theforage.com/simulations/quantium/software-engineering" target="_blank" class="section-link">
+                            <i class="uil uil-external-link-alt"></i>
+                            View Simulation
+                        </a>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-year">January 2026</div>
+                    <h3 class="education-degree">Get Started with Databricks for Data Engineering</h3>
+                    <p class="education-school">Databricks</p>
+                    <p><strong>Skills:</strong> Data Engineering, Databricks SQL, Delta Lake, Data Transformation, Workflows Orchestration</p>
+                    <div class="section-links">
+                        <a href="https://www.databricks.com/learn/certifications/data-engineer-associate" target="_blank" class="section-link">
+                            <i class="uil uil-external-link-alt"></i>
+                            View Details
+                        </a>
+                    </div>
+                </div>
+                <div class="education-card">
                     <div class="education-year">September 2025</div>
                     <h3 class="education-degree">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
                     <p class="education-school">Oracle</p>
@@ -97,18 +121,6 @@
                         <a href="https://www.credly.com/badges/567425a2-7b86-4b97-8876-2e8e19899196/linked_in_profile" target="_blank" class="section-link">
                             <i class="uil uil-external-link-alt"></i>
                             Verify Certificate
-                        </a>
-                    </div>
-                </div>
-                <div class="education-card">
-                    <div class="education-year">February 2026</div>
-                    <h3 class="education-degree">Quantium - Software Engineering Job Simulation</h3>
-                    <p class="education-school">Forage</p>
-                    <p><strong>Skills:</strong> Python, Data Analysis, Dashboard Development, Test Automation, ETL Processes, CI/CD</p>
-                    <div class="section-links">
-                        <a href="https://www.theforage.com/simulations/quantium/software-engineering" target="_blank" class="section-link">
-                            <i class="uil uil-external-link-alt"></i>
-                            View Simulation
                         </a>
                     </div>
                 </div>
@@ -148,7 +160,7 @@
                     <div class="skills-category">
                         <h3>Cloud Platforms</h3>
                         <div class="skills-list">
-                            AWS, Oracle Cloud Infrastructure (OCI), Microsoft Fabric (in progress)
+                            AWS, Oracle Cloud Infrastructure (OCI), Microsoft Fabric (in progress), Databricks
                         </div>
                     </div>
                 </div>
@@ -156,7 +168,7 @@
                     <div class="skills-category">
                         <h3>Databases</h3>
                         <div class="skills-list">
-                            SQL, Oracle Database, Database Design, Database Management Systems
+                            SQL, Oracle Database, Database Design, Database Management Systems, Delta Lake
                         </div>
                     </div>
                 </div>
@@ -164,7 +176,7 @@
                     <div class="skills-category">
                         <h3>Data Tools & Libraries</h3>
                         <div class="skills-list">
-                            Pandas, NumPy, Matplotlib, Data Visualization, Plotly, Dash
+                            Pandas, NumPy, Matplotlib, Data Visualization, Plotly, Dash, Databricks SQL
                         </div>
                     </div>
                 </div>
@@ -180,7 +192,7 @@
                     <div class="skills-category">
                         <h3>Frameworks & Tools</h3>
                         <div class="skills-list">
-                            ASP.NET, .NET Framework, Git, Microsoft Excel, Test Automation (pytest), Continuous Integration
+                            ASP.NET, .NET Framework, Git, Microsoft Excel, Test Automation (pytest), Continuous Integration, Workflows Orchestration
                         </div>
                     </div>
                 </div>
@@ -240,10 +252,6 @@
                             <a href="https://github.com/Kamohelo02/quantium-starter-repo" target="_blank" class="project-link">
                                 <i class="uil uil-github-alt"></i>
                                 View on GitHub
-                            </a>
-                            <a href="#quantium-details" class="project-link view-details">
-                                <i class="uil uil-eye"></i>
-                                View Details
                             </a>
                         </div>
                     </div>
@@ -322,114 +330,6 @@
         </div>
     </section>
     
-    <section id="quantium-details" class="section">
-        <div class="section-content">
-            <h2 class="section-title">
-                Soul Foods Sales Analytics Project
-            </h2>
-            <p class="section-subtitle">Quantium Data Engineering Assessment</p>
-            
-            <div class="project-details">
-                <div class="detail-card">
-                    <h3><i class="uil uil-info-circle"></i> Project Overview</h3>
-                    <p>This project was developed as part of a data engineering and visualization assessment for Soul Foods, a fictional food company. The goal was to process transaction data for their Pink Morsels product line, build an interactive dashboard to visualize sales trends, and implement automated testing for continuous integration.</p>
-                    <p><strong>Business Question:</strong> "Were sales higher before or after the Pink Morsel price increase on the 15th of January, 2021?"</p>
-                </div>
-                
-                <div class="detail-card">
-                    <h3><i class="uil uil-database"></i> Data Processing & ETL Pipeline</h3>
-                    <ul>
-                        <li>ETL pipeline to clean and merge 3 CSV datasets (<code>daily_sales_data_0.csv</code>, <code>daily_sales_data_1.csv</code>, <code>daily_sales_data_2.csv</code>)</li>
-                        <li>Filtered for Pink Morsels transactions only</li>
-                        <li>Cleaned price data (removed $ symbols and redundant values)</li>
-                        <li>Calculated sales by multiplying quantity and price</li>
-                        <li>Extracted required columns: sales, date, region</li>
-                        <li>Consolidated into single dataset: <code>final_sales.csv</code></li>
-                    </ul>
-                </div>
-                
-                <div class="detail-card">
-                    <h3><i class="uil uil-chart-line"></i> Interactive Dashboard</h3>
-                    <ul>
-                        <li>Built with Dash and Plotly for interactive web visualization</li>
-                        <li>Line chart showing sales trends over time with date-sorted data</li>
-                        <li>Region filter (North, South, East, West, All) with radio buttons</li>
-                        <li>Real-time updates based on user selection</li>
-                        <li>Custom CSS styling for professional interface</li>
-                        <li>Header: "Pink Morsels Sales Visualizer"</li>
-                    </ul>
-                </div>
-                
-                <div class="detail-card">
-                    <h3><i class="uil uil-test-tube"></i> Automated Testing & CI/CD</h3>
-                    <ul>
-                        <li>Test automation with pytest and Dash testing utilities</li>
-                        <li><strong>Test Cases:</strong>
-                            <ul>
-                                <li>Header Presence: Verifies dashboard title is displayed</li>
-                                <li>Visualization Presence: Ensures line chart component is rendered</li>
-                                <li>Region Picker Presence: Confirms all five radio button options are available</li>
-                            </ul>
-                        </li>
-                        <li>All tests pass successfully</li>
-                        <li>CI-ready scripts (<code>run_tests.ps1</code> / <code>run_tests.sh</code>) for automated test execution</li>
-                        <li>Can be integrated into CI/CD pipelines (GitHub Actions, Jenkins)</li>
-                    </ul>
-                </div>
-                
-                <div class="detail-card">
-                    <h3><i class="uil uil-lightbulb"></i> Key Insights & Findings</h3>
-                    <ul>
-                        <li><strong>Sales Impact:</strong> Noticeable drop in sales immediately after January 15, 2021 price increase</li>
-                        <li><strong>Regional Analysis:</strong> Trend consistent across all regions</li>
-                        <li><strong>Most Affected:</strong> Southern region experienced the most pronounced decline</li>
-                        <li><strong>Conclusion:</strong> Price increase had negative impact on sales volume</li>
-                        <li><strong>Visual Evidence:</strong> Clear demonstration of price elasticity impact</li>
-                    </ul>
-                </div>
-                
-                <div class="detail-card">
-                    <h3><i class="uil uil-cog"></i> Technologies Used</h3>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Python 3.14.3</span>
-                        <span class="tech-badge">Pandas</span>
-                        <span class="tech-badge">Dash</span>
-                        <span class="tech-badge">Plotly</span>
-                        <span class="tech-badge">Pytest</span>
-                        <span class="tech-badge">Selenium</span>
-                        <span class="tech-badge">Git</span>
-                        <span class="tech-badge">GitHub</span>
-                        <span class="tech-badge">Virtual Environments</span>
-                        <span class="tech-badge">WebDriver Manager</span>
-                    </div>
-                </div>
-                
-                <div class="detail-card">
-                    <h3><i class="uil uil-tasks"></i> Tasks Completed</h3>
-                    <ul>
-                        <li><strong>Environment Setup:</strong> Forked and cloned repository, set up Python virtual environment</li>
-                        <li><strong>Dependencies:</strong> Installed dash, pandas, plotly, pytest, selenium, webdriver-manager</li>
-                        <li><strong>Data Processing:</strong> Developed <code>process_sales.py</code> script</li>
-                        <li><strong>Dashboard Development:</strong> Created <code>app.py</code> Dash application</li>
-                        <li><strong>Testing:</strong> Implemented <code>test_app.py</code> with comprehensive test suite</li>
-                        <li><strong>CI/CD Readiness:</strong> Created PowerShell and Bash scripts for automated testing</li>
-                    </ul>
-                </div>
-                
-                <div class="project-links" style="margin-top: 40px; justify-content: center; display: flex; gap: 20px;">
-                    <a href="https://github.com/Kamohelo02/quantium-starter-repo" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px;">
-                        <i class="uil uil-github-alt"></i>
-                        View Source Code
-                    </a>
-                    <a href="#projects" class="btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; background: rgba(255,255,255,0.1); border: 2px solid #23cf17;">
-                        <i class="uil uil-arrow-up"></i>
-                        Back to Projects
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section id="experience" class="section">
         <div class="section-content">
             <h2 class="section-title">
@@ -445,7 +345,7 @@
                         <h3 class="service-title">Data Engineer</h3>
                         <p class="service-description">
                             Specializing in data pipeline development, ETL processes, data analytics, 
-                            and cloud data solutions using AWS and Oracle Cloud Infrastructure.
+                            and cloud data solutions using AWS, Oracle Cloud Infrastructure, and Databricks.
                         </p>
                     </div>
                 </div>
