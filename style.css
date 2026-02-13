@@ -325,4 +325,9 @@ p {
 .skills-category h3 {
     color: #0f3a2e;
     margin-bottom: 20px;
-   
+    font-size: 18px;
+    font-weight: 600;
+}
+.skills-list {
+    color: #666;
+    line-height:
